@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo LIST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List Project</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="inpNewTask">New Task</label>
+                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter the name of task">
+                    <small id="newTaskHelp" class="form-text text-muted">A short description of your task.</small>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <button class="btn btn-success col m-2" disabled id="btnAdd"> <i class="fas fa-plus-square"></i> Add </button>
+                    <button class="btn btn-danger col m-2" disabled id="btnReset"> <i class="fas fa-backspace"></i> Reset</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-info col m-2" disabled id="btnSort"> <i class="fas fa-sort-amount-down"></i> Sort </button>
+                    <button class="btn btn-warning col m-2" disabled id="btnCleanup"> <i class="fas fa-trash-alt"></i> Cleanup</button>
+                </div>
+            </div>
+        </div>
+        <ul class="row list-group m-2" id="ulTasks">
+        </ul>
+    </div>
+</body>
+</html>
