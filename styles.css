@@ -1,0 +1,29 @@
+#ulTasks li.done{
+    color: #6c757d;
+    text-decoration: line-through;
+    color: red;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: black;
+}
+label{
+    color: violet;
+    font-weight: 800;
+}
+#newTaskHelp{
+    color: violet !important;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#btnAdd,#btnReset,#btnSort,#btnCleanUp{
+    cursor: pointer;
+}
+.list-group-item{
+    cursor: pointer;
+}
